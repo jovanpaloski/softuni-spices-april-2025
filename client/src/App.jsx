@@ -9,11 +9,18 @@ import Login from './components/login/Login'
 import Register from './components/register/register'
 import SpicesDetails from './components/spices-details/SpicesDetails'
 import SpicesEdit from './components/spices-edit/SpicesEdit'
+import { useState } from 'react'
 
 
 
 
 function App() {
+  const [email, setEmail] = useState('');
+
+  const userLoginHandler = (email) => {
+    setEmail(email);
+  };
+
   return (
     <div id='box'>
       <Header />
@@ -25,7 +32,7 @@ function App() {
           <Route path='/spices/create' element={<SpiceCreate />} />
           <Route path='/spices/:spiceId/details' element={<SpicesDetails />} />
           <Route path='/spices/:spiceId/edit' element={<SpicesEdit />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
           <Route path='register' element={<Register />} />
         </Routes>
       </main>
