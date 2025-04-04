@@ -1,19 +1,21 @@
+import { Link } from "react-router"
+
 export default function Header() {
     return (
         <header>
             {/* <!-- Navigation --> */}
-            <h1><a className="home" href="#">Spice Scoville Units</a></h1>
+            <h1><Link className="home" to="/">Spice Scoville Units</Link></h1>
             <nav>
-                <a href="#">All Spices</a>
+                <Link to="/spices">All Spices</Link>
                 {/* <!-- Logged-in users --> */}
                 <div id="user">
-                    <a href="#">Create Spice</a>
-                    <a href="#">Logout</a>
+                    <Link to="/spices/create">Create Spice</Link>
+                    <Link to="/logout">Logout</Link>
                 </div>
                 {/* <!-- Guest users --> */}
                 <div id="guest">
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
+                    <Link to="/login">Login</Link>
+                    <Link to="/register">Register</Link>
                 </div>
             </nav>
         </header>
