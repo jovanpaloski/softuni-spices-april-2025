@@ -22,5 +22,13 @@
         "imageUrl": "https://www.colopac.com/wp-content/uploads/2014/10/Habanero.jpg",
         "summary": "The Habanero pepper is known for its vibrant color and intense heat, typically ranging from 100,000 to 350,000 Scoville Heat Units (SHU). It offers a strong fruity flavor with a pleasant heat that is popular in many sauces, salsas, and dishes. While not as fiery as the Carolina Reaper, the Habanero still packs a punch, making it a favorite for spice lovers who enjoy a solid kick without going to the extreme.",
         "_id": "8e756982-3210-49d0-9aa8-03b54b25d97b"
+    },
+    "839825b0-1fe3-4178-bfaa-99c47dfb3c6c": {
+        "title": "Scotch Bonnet",
+        "category": "Hot",
+        "maxLevel": "350000",
+        "imageUrl": "https://afrobuy.co.uk/cdn/shop/products/Fresh_Hot_Peppers_Scotch_Bonnet_1400x_1200x1200_d5fabc15-ff1f-415e-9b17-952f5ef321ee.jpg",
+        "summary": "The Scotch Bonnet pepper is a popular pepper in Caribbean cuisine, known for its sweet and fruity flavor with a serious kick. With a heat level that can reach up to 350,000 SHU, it's often used in hot sauces and marinades. Its distinctive shape and bright colors make it instantly recognizable, and its heat can bring a bold punch to any dish without being as overwhelming as the super-hot peppers.",
+        "_id": "839825b0-1fe3-4178-bfaa-99c47dfb3c6c"
     }
 }

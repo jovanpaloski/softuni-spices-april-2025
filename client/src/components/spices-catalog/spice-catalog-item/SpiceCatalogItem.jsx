@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 export default function SpiceCatalogItem({
     _id,
     title,
@@ -10,7 +12,7 @@ export default function SpiceCatalogItem({
                 <img src={imageUrl} />
                 <h6>{category}</h6>
                 <h2>{title}</h2>
-                <a href="#" className="details-button">Details</a>
+                <Link to={`/spices/${_id}/details`} className="details-button">Details</Link>
             </div>
         </div>
     )
