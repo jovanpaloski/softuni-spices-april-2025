@@ -29,7 +29,7 @@
 }
 
 .welcome-message h2 {
-    color: #ffffff;
+    color: #006952;
     font-size: 300%;
     font-size: 55px;
     line-height: 1;
@@ -42,7 +42,7 @@
 }
 
 .welcome-message h3 {
-    color: #ffffff;
+    color: #006952;
     font-size: 600%;
     text-shadow: none;
     line-height: 1;
@@ -89,7 +89,7 @@
     border-radius: 15px;
     float: left;
     height: auto;
-    color: rgb(204, 144, 131);
+    color: rgb(130, 139, 0);
 }
 
 .image-wrap {
@@ -159,11 +159,11 @@
 }
 
 .details-btn {
-    background-color: #fd5454;
+    background-color: #b60000;
     font-size: 1.4rem;
     padding-top: 20px;
     margin-top: 10px;
-    color: white;
+    color: rgb(243, 255, 72);
     padding: 0.9em 1.4em;
 }
 
@@ -174,12 +174,12 @@
 }
 
 .btn.details-btn:hover {
-    background-color: rgb(192, 129, 117);
+    background-color: rgb(253, 72, 35);
     color: white;
 }
 
 #home-page>h1 {
-    color: rgb(252, 168, 151);
+    color: rgb(0, 143, 131);
     text-align: center;
     font-weight: 700;
     font-size: 84px;
@@ -187,7 +187,7 @@
 }
 
 .no-articles {
-    color: white;
+    color: rgb(77, 138, 119);
     text-align: center;
     font-weight: 700;
     font-size: 60px;

@@ -1,6 +1,8 @@
-import './App.css'
+import { Routes, Route } from 'react-router'
+
 import Header from './components/header/Header'
 import Home from './components/home/Home'
+import './App.css'
 
 function App() {
   return (
@@ -8,7 +10,9 @@ function App() {
       <Header />
 
       <main id="main-content">
-        <Home />
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
       </main>
     </div>
   )
