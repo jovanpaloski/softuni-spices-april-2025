@@ -58,7 +58,7 @@ export default function SpicesDetails() {
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this spice )  --> */}
                 <div className="buttons">
-                    <Link to="#" className="button">Edit</Link>
+                    <Link to={`/spices/${spiceId}/edit`} className="button">Edit</Link>
                     <button onClick={spiceDeleteClickHandler} className="button">Delete</button>
                 </div>
             </div>
