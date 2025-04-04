@@ -1,0 +1,26 @@
+{
+    "e992d12f-52ba-4389-ac8b-245927b28998": {
+        "title": "Ghost Pepper (Bhut Jolokia)",
+        "category": "Super-Hot Chili Pepper",
+        "maxLevel": "1041427",
+        "imageUrl": "https://www.cayennediane.com/wp-content/uploads/Ghost-Peppers.jpg",
+        "summary": "The Ghost Pepper, or Bhut Jolokia, is one of the spiciest chili peppers in the world, originating from India. With over 1 million SHU, it delivers an intense, lingering burn that can cause sweating, tears, and even shortness of breath. Often used in extreme hot sauces and spicy challenges, this fiery pepper is not for the faint of heart!",
+        "_id": "e992d12f-52ba-4389-ac8b-245927b28998"
+    },
+    "6d14f6b0-18bd-47a9-9d0c-4da4111adc83": {
+        "title": "Carolina Reaper",
+        "category": "Super Hot",
+        "maxLevel": "2009231",
+        "imageUrl": "https://shop.firelandfoods.at/cdn/shop/files/IMG_7628.jpg?v=1695190340",
+        "summary": "The Carolina Reaper holds the title of the world's hottest pepper, with some variants hitting over 2.2 million Scoville Heat Units (SHU). This pepper is notorious for its scorching heat and fruity, slightly sweet flavor, which sneaks up before unleashing an intense fiery punch. Only for those who dare to test the limits of their spice tolerance!",
+        "_id": "6d14f6b0-18bd-47a9-9d0c-4da4111adc83"
+    },
+    "8e756982-3210-49d0-9aa8-03b54b25d97b": {
+        "title": "Habanero",
+        "category": "Hot",
+        "maxLevel": "349998",
+        "imageUrl": "https://www.colopac.com/wp-content/uploads/2014/10/Habanero.jpg",
+        "summary": "The Habanero pepper is known for its vibrant color and intense heat, typically ranging from 100,000 to 350,000 Scoville Heat Units (SHU). It offers a strong fruity flavor with a pleasant heat that is popular in many sauces, salsas, and dishes. While not as fiery as the Carolina Reaper, the Habanero still packs a punch, making it a favorite for spice lovers who enjoy a solid kick without going to the extreme.",
+        "_id": "8e756982-3210-49d0-9aa8-03b54b25d97b"
+    }
+}
