@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router"
+import { Link, useNavigate, useParams } from "react-router"
 import spiceService from "../../services/spiceService.js";
 
 export default function SpicesDetails() {
+    const navigate = useNavigate();
     const [spice, setSpice] = useState({});
     const { spiceId } = useParams();
 
@@ -12,6 +13,18 @@ export default function SpicesDetails() {
             setSpice(result);
         })();
     }, [spiceId]);
+
+    const spiceDeleteClickHandler = () => {
+        const hasConfirm = confirm(`Are you sure you want to delete ${spice.title} spice?`);
+
+        if (!hasConfirm) {
+            return;
+        }
+
+        spiceService.delete(spiceId);
+
+        navigate('/spices');
+    }
 
     return (
         <section id="spice-details">
@@ -45,8 +58,8 @@ export default function SpicesDetails() {
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this spice )  --> */}
                 <div className="buttons">
-                    <a href="#" className="button">Edit</a>
-                    <a href="#" className="button">Delete</a>
+                    <Link to="#" className="button">Edit</Link>
+                    <button onClick={spiceDeleteClickHandler} className="button">Delete</button>
                 </div>
             </div>
 

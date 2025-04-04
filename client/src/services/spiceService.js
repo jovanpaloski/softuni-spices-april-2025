@@ -16,5 +16,8 @@ export default {
     },
     create(spiceData) {
         return request.post(baseUrl, spiceData);
-    }
+    },
+    delete(spiceId) {
+        return request.delete(`${baseUrl}/${spiceId}`);
+    },
 }
