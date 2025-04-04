@@ -30,7 +30,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/spices' element={<SpicesCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
-          <Route path='/spices/:spiceId/details' element={<SpicesDetails />} />
+          <Route path='/spices/:spiceId/details' element={<SpicesDetails email={email} />} />
           <Route path='/spices/:spiceId/edit' element={<SpicesEdit />} />
           <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
           <Route path='register' element={<Register />} />

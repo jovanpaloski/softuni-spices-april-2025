@@ -4,7 +4,9 @@ import spiceService from "../../services/spiceService.js";
 import CommentsShow from "../comments-show/CommentsShow";
 import CommentsCreate from "../comments-create/CommentsCreate";
 
-export default function SpicesDetails() {
+export default function SpicesDetails({
+    email,
+}) {
     const navigate = useNavigate();
     const [spice, setSpice] = useState({});
     const { spiceId } = useParams();
@@ -51,7 +53,7 @@ export default function SpicesDetails() {
                 </div>
             </div>
 
-            <CommentsCreate />
+            <CommentsCreate email={email} />
 
         </section>
     )
