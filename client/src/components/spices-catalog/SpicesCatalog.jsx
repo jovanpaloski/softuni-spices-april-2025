@@ -15,12 +15,8 @@ export default function SpicesCatalog() {
     return (
         <section id="catalog-page">
             <h1>All Spices</h1>
-            {/* <!-- Display div: with information about every game (if any) --> */}
-            
-            {spices.map(spice => <SpiceCatalogItem key={spice._id} {...spice} />)};
 
-            {/* <!-- Display paragraph: If there is no spices  --> */}
-            <h3 className="no-articles">No Articles Yet</h3>
+            {spices.length > 0 ? spices.map(spice => <SpiceCatalogItem key={spice._id} {...spice} />) : <h3 className="no-articles">No Articles Yet</h3>}
         </section>
-    )
+    );
 }
