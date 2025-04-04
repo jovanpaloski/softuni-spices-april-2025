@@ -3,6 +3,13 @@ import { Routes, Route } from 'react-router'
 import Header from './components/header/Header'
 import Home from './components/home/Home'
 import './App.css'
+import SpicesCatalog from './components/spices-catalog/SpicesCatalog'
+import SpiceCreate from './components/spice-create/SpiceCreate'
+import Login from './components/login/Login'
+import Register from './components/register/register'
+
+
+
 
 function App() {
   return (
@@ -12,6 +19,10 @@ function App() {
       <main id="main-content">
         <Routes>
           <Route index element={<Home />} />
+          <Route path='/spices' element={<SpicesCatalog />} />
+          <Route path='/spices/create' element={<SpiceCreate />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='register' element={<Register />} />
         </Routes>
       </main>
     </div>

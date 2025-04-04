@@ -1,4 +1,4 @@
-export default function SpicesCreate() {
+export default function SpiceCreate() {
     return (
         <section id="create-page" className="auth">
             <form id="create">
