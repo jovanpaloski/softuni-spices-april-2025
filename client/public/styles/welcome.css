@@ -62,6 +62,12 @@
     text-align: center;
 }
 
+.spice-0 {
+    width: 830px;
+    padding-left: 10%;
+    padding-bottom: 15%;
+}
+
 #home-page {
     background-color: transparent;
     box-shadow: 0px 0px 40px 0px;
@@ -70,9 +76,10 @@
     padding: 55px;
     height: auto;
     width: auto;
+    padding-left: 160px;
 }
 
-.game {
+.spice {
     box-shadow: 0px 0px 30px 0px;
     margin-top: 20px;
     padding: 50px;
@@ -89,17 +96,31 @@
     width: 250px;
     height: 250px;
     display: inline-block;
-    border-radius: 50%;
     overflow: hidden;
     position: relative;
     text-align: center;
+}
+
+.spice-1 {
+    width: 350px;
+    height: 350px;
+}
+
+.spice-2 {
+    width: 350px;
+    height: 350px;
+}
+
+.spice-3 {
+    width: 350px;
+    height: 350px;
 }
 
 .image-wrap>img {
     max-width: 100%;
 }
 
-.game>h3 {
+.spice>h3 {
     font-family: "Agency FB";
     font-size: 42px;
     font-weight: 700;
@@ -112,7 +133,7 @@
     text-transform: uppercase;
 }
 
-.game-content>h4 {
+.spice-content>h4 {
     color: #c2d4f8;
     font-size: 24px;
     text-align: center;
