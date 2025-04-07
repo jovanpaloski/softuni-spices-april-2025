@@ -1,10 +1,10 @@
 body {
-    background-image: url('../images/bg-fixed-3.jpg');
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #b7ffa4;
 }
 
 .auth {
