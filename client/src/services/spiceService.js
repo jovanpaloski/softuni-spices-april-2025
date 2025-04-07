@@ -12,6 +12,9 @@ export default {
         return spices;
 
     },
+    getOne(spiceId) {
+        return request.get(`${baseUrl}/${spiceId}`);
+    },
     create(spiceData) {
         return request.post(baseUrl, spiceData);
     }
