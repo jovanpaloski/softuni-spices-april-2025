@@ -1,7 +1,20 @@
+import { useNavigate } from 'react-router'
+import spiceService from "../../services/spiceService.js";
+
 export default function SpiceCreate() {
+    const navigate = useNavigate();
+
+    const submitAction = async (formData) => {
+        const spiceData = Object.fromEntries(formData);
+
+        const result = await spiceService.create(spiceData);
+
+        navigate('/spices');
+    }
+
     return (
         <section id="create-page" className="auth">
-            <form id="create">
+            <form id="create" action={submitAction}>
                 <div className="container">
 
                     <h1>Create Spice</h1>

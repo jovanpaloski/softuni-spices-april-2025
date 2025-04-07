@@ -1,4 +1,16 @@
+import { useEffect, useState } from "react"
+import spiceService from "../../services/spiceService.js"
+
 export default function SpiceCatalog() {
+    const [spices, setSpices] = useState([]);
+
+    useEffect(() => {
+        spiceService.getAll()
+            .then(setSpices)
+    }, []);
+
+    console.log(spices);
+
     return (
         <section id="catalog-page">
             <h1>All Spices</h1>

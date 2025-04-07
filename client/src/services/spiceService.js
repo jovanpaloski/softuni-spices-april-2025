@@ -1,17 +1,18 @@
+import request from "../utils/request.js";
+
+
 const baseUrl = 'http://localhost:3030/jsonstore/spices';
 
 export default {
-    async create(spiceData) {
-        const response = await fetch(baseUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(spiceData),
-        });
+    async getAll() {
+        const result = await request.get(baseUrl);
 
-        const result = await response.json();
+        const spices = Object.values(result);
 
-        return result;
+        return spices;
+
+    },
+    create(spiceData) {
+        return request.post(baseUrl, spiceData);
     }
 }
