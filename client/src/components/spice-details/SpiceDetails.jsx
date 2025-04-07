@@ -51,7 +51,7 @@ export default function SpiceDetails({email,}) {
                 </div>
             </div>
 
-            <CommentsCreate email={email} />
+            <CommentsCreate email={email} spiceId={spiceId} />
 
         </section>
     )
