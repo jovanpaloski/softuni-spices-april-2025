@@ -18,6 +18,9 @@ export default {
     create(spiceData) {
         return request.post(baseUrl, spiceData);
     },
+    edit(spiceId, spiceData) {
+        return request.put(`${baseUrl}/${spiceId}`, { ...spiceData, _id: spiceId });
+    },
     delete(spiceId) {
         return request.delete(`${baseUrl}/${spiceId}`);
     },

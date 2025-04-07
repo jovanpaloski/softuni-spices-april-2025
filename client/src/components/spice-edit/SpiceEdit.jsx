@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router"
 import spiceService from "../../services/spiceService.js";
 
 export default function SpiceEdit() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const { spiceId } = useParams();
     const [spice, setSpice] = useState({});
 
@@ -12,9 +12,17 @@ export default function SpiceEdit() {
             .then(setSpice);
     }, [spiceId]);
 
+    const formAction = async (formData) => {
+        const spiceData = Object.fromEntries(formData);
+
+        await spiceService.edit(spiceId, spiceData);
+
+        navigate(`/spices/${spiceId}/details`);
+    }
+
     return (
         <section id="edit-page" className="auth">
-            <form id="edit">
+            <form id="edit" action={formAction}>
                 <div className="container">
 
                     <h1>Edit Spice</h1>
