@@ -22,5 +22,13 @@
         "imageUrl": "https://pepperjoe.com/cdn/shop/products/ButchTScorpion.jpg?v=1646923151",
         "summary": "Once the hottest pepper in the world, this scorpion stinger brings serious fire. Its intense heat is matched by a slightly fruity flavor, but it’s not for the faint of heart. Handle with gloves—and caution.\n\n",
         "_id": "3e3cb2f8-5fce-4208-a767-d5cb40b5ffa2"
+    },
+    "6fa9480e-4249-4a41-a14e-c0e44a266231": {
+        "title": "7 Pot Douglah",
+        "category": "Superhot Pepper",
+        "maxLevel": "1853936",
+        "imageUrl": "https://m.media-amazon.com/images/I/8171Mb+G1SL._AC_UF894,1000_QL80_.jpg",
+        "summary": "The 7 Pot Douglah, known for its rich dark brown color and volcanic heat, hails from Trinidad. The name \"7 Pot\" comes from the legend that one pepper is enough to spice up seven pots of stew. Despite its terrifying Scoville rating, it has a unique, earthy flavor that chili lovers admire. It's one of the hottest non-red peppers on the planet.",
+        "_id": "6fa9480e-4249-4a41-a14e-c0e44a266231"
     }
 }

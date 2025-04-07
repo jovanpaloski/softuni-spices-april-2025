@@ -15,9 +15,8 @@ export default function SpiceCatalog() {
     return (
         <section id="catalog-page">
             <h1>All Spices</h1>
-            {spices.map(spice => <SpiceCatalogItem key={spice._id} {...spice} />)};
 
-            <h3 className="no-articles">No Spices Yet</h3>
+            {spices.length > 0 ? spices.map(spice => <SpiceCatalogItem key={spice._id} {...spice} />) : <h3 className="no-articles">No Spices Yet</h3>}
         </section>
     )
 }

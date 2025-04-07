@@ -18,7 +18,7 @@ export default function SpiceCreate() {
                 <div className="container">
 
                     <h1>Create Spice</h1>
-                    <label htmlFor="leg-title">Legendary title:</label>
+                    <label htmlFor="leg-title">Spicy Title:</label>
                     <input type="text" id="title" name="title" placeholder="Enter Spicy Title..." />
 
                     <label htmlFor="category">Category:</label>
