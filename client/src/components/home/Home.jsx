@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
 
                 {/* <!-- Display paragraph: If there is no spices  --> */}
-                <p className="no-articles">No Spicy Peppers Yet</p>
+                <p className="no-articles">No Spices Yet</p>
             </div>
         </section>
     )

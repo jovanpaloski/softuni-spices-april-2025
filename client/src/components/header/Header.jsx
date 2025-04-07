@@ -11,7 +11,7 @@ export default function Header() {
                 </div>
                 {/* <!-- Logged-in users --> */}
                 <div id="user">
-                    <Link className="adjust-1" to="/spices-create">Create Spice</Link>
+                    <Link className="adjust-1" to="/spices/create">Create Spice</Link>
                     <Link className="adjust-2" to="/logout">Logout</Link>
                 </div>
                 {/* <!-- Guest users --> */}
