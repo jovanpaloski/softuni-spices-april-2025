@@ -28,7 +28,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/spices' element={<SpiceCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
-          <Route path='/spices/:spiceId/details' element={<SpiceDetails />} />
+          <Route path='/spices/:spiceId/details' element={<SpiceDetails email={email} />} />
           <Route path='/spices/:spiceId/edit' element={<SpiceEdit />} />
         </Routes>
       </main>
