@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router"
 import spiceService from "../../services/spiceService.js";
+import CommentsShow from "../comments-show/CommentsShow";
+import CommentsCreate from "../comments-create/CommentsCreate";
 
 export default function SpiceDetails() {
     const navigate = useNavigate();
@@ -40,21 +42,7 @@ export default function SpiceDetails() {
 
                 <p className="text">{spice.summary}</p>
 
-                {/* <!-- Bonus ( for Guests and Users ) --> */}
-                <div className="details-comments">
-                    <h2>Comments:</h2>
-                    <ul>
-                        {/* <!-- list all comments for current spice (If any) --> */}
-                        <li className="comment">
-                            <p>Content: I rate this one quite highly.</p>
-                        </li>
-                        <li className="comment">
-                            <p>Content: The best spice.</p>
-                        </li>
-                    </ul>
-                    {/* <!-- Display paragraph: If there are no spices in the database --> */}
-                    <p className="no-comment">No comments.</p>
-                </div>
+                <CommentsShow />
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this spice )  --> */}
                 <div className="buttons">
@@ -63,15 +51,7 @@ export default function SpiceDetails() {
                 </div>
             </div>
 
-            {/* <!-- Bonus --> */}
-            {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current spice ) --> */}
-            <article className="create-comment">
-                <label>Add new comment:</label>
-                <form className="form">
-                    <textarea name="comment" placeholder="Comment......"></textarea>
-                    <input className="btn submit" type="submit" value="Add Comment" />
-                </form>
-            </article>
+            <CommentsCreate />
 
         </section>
     )
