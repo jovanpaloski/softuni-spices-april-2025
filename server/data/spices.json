@@ -1,0 +1,26 @@
+{
+    "881e4ecb-56eb-4bc7-8b56-b85320af3844": {
+        "title": "Carolina Reaper",
+        "category": "Superhot Pepper",
+        "maxLevel": "2200000",
+        "imageUrl": "https://shop.firelandfoods.at/cdn/shop/files/IMG_7628.jpg?v=1695190340",
+        "summary": "The Carolina Reaper is currently one of the hottest peppers in the world. With an average of 1.6 million SHU and peaks of over 2.2 million SHU, it’s not for the faint of heart. Originally bred in South Carolina, it delivers a fruity flavor followed by a firestorm of heat.",
+        "_id": "881e4ecb-56eb-4bc7-8b56-b85320af3844"
+    },
+    "b2c03c6d-029f-4e1a-807c-5cf97841975a": {
+        "title": "Ghost Pepper",
+        "category": "Superhot Pepper",
+        "maxLevel": "1041427",
+        "imageUrl": "https://magicplantfarms.com/wp-content/uploads/2024/08/how-spicy-is-ghost-pepper.png",
+        "summary": "Known as Bhut Jolokia in India, the Ghost Pepper held the title of world’s hottest pepper for a time. It has a smoky, slightly sweet taste that quickly turns into an inferno. It's used sparingly in hot sauces, powders, and extreme chili challenges.",
+        "_id": "b2c03c6d-029f-4e1a-807c-5cf97841975a"
+    },
+    "3e3cb2f8-5fce-4208-a767-d5cb40b5ffa2": {
+        "title": "Trinidad Scorpion Butch T",
+        "category": "Superhot",
+        "maxLevel": "1463700",
+        "imageUrl": "https://pepperjoe.com/cdn/shop/products/ButchTScorpion.jpg?v=1646923151",
+        "summary": "Once the hottest pepper in the world, this scorpion stinger brings serious fire. Its intense heat is matched by a slightly fruity flavor, but it’s not for the faint of heart. Handle with gloves—and caution.\n\n",
+        "_id": "3e3cb2f8-5fce-4208-a767-d5cb40b5ffa2"
+    }
+}
