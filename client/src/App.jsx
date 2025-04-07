@@ -7,6 +7,7 @@ import Register from './components/register/Register'
 import SpiceCatalog from './components/spice-catalog/SpiceCatalog'
 import SpiceCreate from './components/spice-create/SpiceCreate'
 import SpiceDetails from './components/spice-details/SpiceDetails'
+import SpiceEdit from './components/spice-edit/SpiceEdit'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/spices' element={<SpiceCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
           <Route path='/spices/:spiceId/details' element={<SpiceDetails />} />
+          <Route path='/spices/:spiceId/edit' element={<SpiceEdit />} />
         </Routes>
       </main>
     </div>
