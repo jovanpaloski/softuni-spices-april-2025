@@ -8,8 +8,15 @@ import SpiceCatalog from './components/spice-catalog/SpiceCatalog'
 import SpiceCreate from './components/spice-create/SpiceCreate'
 import SpiceDetails from './components/spice-details/SpiceDetails'
 import SpiceEdit from './components/spice-edit/SpiceEdit'
+import { useState } from 'react'
 
 function App() {
+  const [email, setEmail] = useState('');
+
+  const userLoginHandler = (email) => {
+    setEmail(email);
+  };
+
   return (
     <div id='box'>
       <Header />
@@ -17,7 +24,7 @@ function App() {
       <main id="main-content">
         <Routes>
           <Route index element={<Home />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
           <Route path='/register' element={<Register />} />
           <Route path='/spices' element={<SpiceCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
