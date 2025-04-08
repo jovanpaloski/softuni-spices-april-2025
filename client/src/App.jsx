@@ -24,12 +24,12 @@ function App() {
       <main id="main-content">
         <Routes>
           <Route index element={<Home />} />
-          <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
-          <Route path='/register' element={<Register />} />
           <Route path='/spices' element={<SpiceCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
           <Route path='/spices/:spiceId/details' element={<SpiceDetails email={email} />} />
           <Route path='/spices/:spiceId/edit' element={<SpiceEdit />} />
+          <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
       </main>
     </div>
