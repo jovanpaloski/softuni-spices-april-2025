@@ -11,12 +11,10 @@ import SpiceEdit from './components/spice-edit/SpiceEdit'
 import { useState } from 'react'
 
 function App() {
-  const [email, setEmail] = useState('');
+  const [authData, setAuthData] = useState({});
 
-  const userLoginHandler = (authData) => {
-    console.log(authData);
-
-    setEmail(authData.email);
+  const userLoginHandler = (resultData) => {
+    setAuthData(resultData);
   };
 
   return (
@@ -28,7 +26,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/spices' element={<SpiceCatalog />} />
           <Route path='/spices/create' element={<SpiceCreate />} />
-          <Route path='/spices/:spiceId/details' element={<SpiceDetails email={email} />} />
+          <Route path='/spices/:spiceId/details' element={<SpiceDetails email={authData.email} />} />
           <Route path='/spices/:spiceId/edit' element={<SpiceEdit />} />
           <Route path='/login' element={<Login onLogin={userLoginHandler} />} />
           <Route path='/register' element={<Register />} />
