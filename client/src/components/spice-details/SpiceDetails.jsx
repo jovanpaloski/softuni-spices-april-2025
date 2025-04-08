@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router"
 import spiceService from "../../services/spiceService.js";
 import CommentsShow from "../comments-show/CommentsShow";
 import CommentsCreate from "../comments-create/CommentsCreate";
 import commentService from "../../services/commentService.js";
+import { UserContext } from "../../contexts/useContext.js";
 
-export default function SpiceDetails({email,}) {
+export default function SpiceDetails() {
     const navigate = useNavigate();
+    const { email } = useContext(UserContext);
     const [spice, setSpice] = useState({});
     const [comments, setComments] = useState([]);
     const { spiceId } = useParams();
