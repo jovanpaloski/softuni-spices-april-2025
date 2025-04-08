@@ -4,8 +4,8 @@ import request from "../utils/request.js";
 const baseUrl = 'http://localhost:3030/jsonstore/spices';
 
 export default {
-    async getAll() {
-        const result = await request.get(baseUrl);
+    async getAll(signal) {
+        const result = await request.get(baseUrl, signal);
 
         const spices = Object.values(result);
 
