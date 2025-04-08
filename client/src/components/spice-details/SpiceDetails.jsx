@@ -3,17 +3,20 @@ import { Link, useNavigate, useParams } from "react-router"
 import spiceService from "../../services/spiceService.js";
 import CommentsShow from "../comments-show/CommentsShow";
 import CommentsCreate from "../comments-create/CommentsCreate";
+import commentService from "../../services/commentService.js";
 
 export default function SpiceDetails({email,}) {
     const navigate = useNavigate();
     const [spice, setSpice] = useState({});
+    const [comments, setComments] = useState([]);
     const { spiceId } = useParams();
 
     useEffect(() => {
-        (async() => {
-            const result = await spiceService.getOne(spiceId);
-            setSpice(result);
-        })();
+        spiceService.getOne(spiceId)
+            .then(setSpice);
+
+        commentService.getAll(spiceId)
+            .then(setComments)
     }, [spiceId]);
 
     const spiceDeleteClickHandler = async () => {
@@ -27,6 +30,10 @@ export default function SpiceDetails({email,}) {
 
         navigate('/spices');
     };
+
+    const commentCreateHandler = (newComment) => {
+        setComments(state => [...state, newComment]);
+    }
 
     return (
         <section id="spice-details">
@@ -42,7 +49,7 @@ export default function SpiceDetails({email,}) {
 
                 <p className="text">{spice.summary}</p>
 
-                <CommentsShow />
+                <CommentsShow comments={comments} />
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this spice )  --> */}
                 <div className="buttons">
@@ -51,7 +58,7 @@ export default function SpiceDetails({email,}) {
                 </div>
             </div>
 
-            <CommentsCreate email={email} spiceId={spiceId} />
+            <CommentsCreate email={email} spiceId={spiceId} onCreate={commentCreateHandler} />
 
         </section>
     )

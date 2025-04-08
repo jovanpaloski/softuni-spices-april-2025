@@ -1,12 +1,12 @@
 import commentService from "../../services/commentService.js";
 
-export default function CommentsCreate({email, spiceId,}) {
+export default function CommentsCreate({email, spiceId, onCreate,}) {
     const commentAction = async (formData) => {
         const comment = formData.get('comment');
 
         const createdComment = await commentService.create(email, spiceId, comment);
 
-        console.log(createdComment);
+        onCreate(createdComment);
     }
 
     return (
