@@ -11,6 +11,7 @@ import SpiceCatalog from './components/spice-catalog/SpiceCatalog'
 import SpiceCreate from './components/spice-create/SpiceCreate'
 import SpiceDetails from './components/spice-details/SpiceDetails'
 import SpiceEdit from './components/spice-edit/SpiceEdit'
+import Logout from './components/logout/Logout'
 import './App.css'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path='/spices/:spiceId/edit' element={<SpiceEdit />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/logout' element={<Logout />} />
           </Routes>
         </main>
       </div>
